@@ -9,9 +9,4 @@ async function fetchMeals(){
     console.log(meals);
 }
 
-function mealsDisplay() {
-    meals.length = 12;
-    result.innerHTML
-}
-
 fetchMeals();
