@@ -40,4 +40,13 @@ function mealsDisplay(){
         ).join("");
     }
 }
+input.addEventListener("input", (e)=>{
+    fetchMeals(e.target.value); // recover the input in real-time
+});
+
+form.addEventListener("submit", (e)=>{
+    e.preventDefault();
+    mealsDisplay();
+});
+
 fetchMeals();
